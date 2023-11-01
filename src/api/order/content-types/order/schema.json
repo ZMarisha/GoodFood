@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stripeId": {
+      "type": "text"
+    },
+    "cartItems": {
+      "type": "json"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "secondName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "deliveryAddress": {
+      "type": "text"
+    },
+    "payByCreditCard": {
+      "type": "string"
+    },
+    "firebaseId": {
+      "type": "string"
+    },
+    "orderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "current",
+        "completed",
+        "canceled"
+      ],
+      "default": "current"
+    },
+    "currentOrderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Processed",
+        "Going",
+        "Collected",
+        "OnWay",
+        "Delivered"
+      ],
+      "default": "Processed"
+    }
+  }
+}
